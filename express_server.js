@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 const cookieSession = require('cookie-session');
 app.use(cookieSession({name: 'session', secret: 'grey-rose-juggling-volcanoes'}));
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 app.set('view engine', 'ejs');
 
